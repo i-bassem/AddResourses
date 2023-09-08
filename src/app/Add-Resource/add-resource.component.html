@@ -1,0 +1,233 @@
+
+<!-- style="border: 2px solid red;" -->
+
+<div class="row mt-5">
+<!-- R 1 -->
+<div class="row flex-row-reverse">
+<!-- col 1 -->
+       <div class="col-6">
+        <div class="row d-flex flex-row justify-content-end flex-nowrap align-items-center" >
+            <div class="d-flex flex-row " style="justify-content: flex-end">
+                <span>اضافه موارد جديده</span>
+            </div>
+            <button class="btn backbtn">
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+            </button>  
+        </div>
+       </div>
+<!-- col2 -->
+    <div class="col-6">
+        <div class="d-flex flex-row" style="flex-wrap: nowrap;align-items: center;">
+    
+            <div>
+             <button class="btn backbtn">
+                 حفظ التغييرات
+             </button> 
+         </div>
+         
+         <div>
+             <button class="btn backbtn">
+                 حذف المورد
+             </button> 
+         </div>
+ 
+         <div class="form-check form-switch">
+             <label class="form-check-label" for="flexSwitchCheckChecked"
+             >مفعله
+             </label>
+             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+         </div>
+ 
+        </div>
+    </div>
+</div>
+
+
+<!-- R2 -->
+<div class="row">
+<!-- col1 -->
+<div class="col-6 ">
+    <div class="row recBox my-3 h-100" >
+
+        <div class="row">
+            <span style="text-align: right;">المورد متاح الى</span>
+       <!-- DropDown menu -->
+     <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        شهر</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div> 
+
+        </div>
+
+        <div class="row">
+            <span style="text-align: right;">وقت المورد</span>
+
+            <div class="d-flex flex-row flex-nowrap  flex-row-reverse justify-content-between">
+            
+            <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                 <label class="form-check-label" for="inlineRadio1">وقت الخدمه</label>
+               </div>
+               <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                 <label class="form-check-label" for="inlineRadio2">الوقت ثابت</label>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 mx-2">
+               <!-- Quantity -->
+               <div class="d-flex mb-4" style="max-width: 50px; max-height: 50px;">
+          
+                 <button class="btn btn-primary px-3 me-2"
+                   onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                   <i class="fas fa-minus"></i>
+                 </button>
+          
+                 <div class="form-outline">
+                   <input type="number" #qunty  min="30" max="" 
+                          name="quantity" value="" placeholder="30"
+                          class="form-control" style="width: 70px;" disabled="" />     
+                 </div>
+          
+                 <button class="btn btn-primary px-3 ms-2"
+                 onclick="this.parentNode.querySelector('input[type=number]').stepUp()" 
+                 >
+                 <i class="fas fa-plus"></i>
+                 </button>
+          
+               </div>
+             </div>
+
+                 
+            </div>
+        </div>
+
+        <div class="row">
+            <span style="text-align: right;">الحجز المحدد</span>
+
+            <div class="d-flex flex-row flex-nowrap  flex-row-reverse justify-content-between">
+            
+            <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                 <label class="form-check-label" for="inlineRadio1">حجز واحد فقط </label>
+               </div>
+               <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                 <label class="form-check-label" for="inlineRadio2">حجز اكثر من شخص من نفس الموعد</label>
+               </div>
+
+               <!-- Quantity -->
+               <div class="form-outline">
+                <input type="number" id="typeNumber" class="form-control" />
+                <label class="form-label" for="typeNumber">50 موعد</label>
+            </div> 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- col2 Avatar-->
+    <div class="col-6" >
+        <!-- c2r1 -->
+        <div class="row recBox d-flex align-content-center flex-wrap my-3 ms-2" style="height: 70%;">  
+       <!-- <div d-flex flex-col justify-content-end flex-wrap class="d-flex flex-column justify-content-around align-content-center" style="border: 2px solid red;">  </div> -->
+       <div class="col-8 d-flex flex-column justify-content-center">  
+        <div><span class="float-end">اسم الموارد</span></div>
+        <div class="nameBox float-end w-100">
+              <b class="float-end">هيثم محمد </b>
+            </div>
+        </div>  
+
+      <div class="col-4 ">
+        <img src="../assets/Image-100.png" class="avatar" alt="Profile picture">
+        <!-- <img src="../assets/gallery.svg" alt=""> -->
+        <!-- <button class="position-absolute top-25 start-25 translate-middle p-2 bg-primary rounded-circle" style="border-radius: 30px;">
+           <img src="../assets/gallery.svg" alt="">
+        </button> -->
+        <img class="notify-badge"  src="../assets/gallery.svg" alt="add Profile image">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <circle cx="13" cy="13" r="13" fill="#0771DE"/>
+        </svg> -->
+      </div>
+
+        </div>
+<!-- c2r2 -->
+    <div class="row recBox mt-4 box3 d-flex flex-row-reverse align-items-center flex-nowrap ms-2" style=" height: 20% ;">
+    
+        <div class="w-80 ">
+        <b class="b1 float-end">حجز خلال اليوم</b>
+    
+        <div class="form-check form-check-inline float-end">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">حجز خلال اليوم</label>
+        </div>
+        <div class="form-check form-check-inline ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">حجز مدة
+                <span class="span">( أكثر من يوم )</span></label>
+        </div>
+    </div>
+    </div>
+ </div>
+</div>
+
+
+<!-- R3 XXX-->
+<div class="row recBox my-5" >
+        <div class="row flex-row flex-nowrap">
+            <div style="width: 30%;">
+                <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-check-outlined">اعدادات متقدمه</label>
+                <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-check-outlined2">اعدادات تقليديه</label>
+                </div>
+            <div style="width: 70%;">
+            <span class="float-end">حدد مواعيد العمل للمورد</span>
+            <br>
+            <span class="float-end">        تكوين إعدادات الأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير
+                .وإضافة / إزالة أوقات الراحة لإعداد ساعات العمل</span>
+            </div>
+       
+        </div>
+ 
+        <app-work-hours class="mt-5" day="السبت"></app-work-hours>
+        <app-work-hours day="الأحد"></app-work-hours>
+        <app-work-hours day="الاثنين"></app-work-hours>
+        <app-work-hours day="الثلاثاء"></app-work-hours>
+        <app-work-hours day="الأربعاء"></app-work-hours>
+        <app-work-hours day="الخميس"></app-work-hours>
+        <app-work-hours day="الجمعة"></app-work-hours> 
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

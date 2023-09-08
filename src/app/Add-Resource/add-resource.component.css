@@ -1,0 +1,86 @@
+.backbtn{
+    width: 57px;
+    height: 57px;
+    background-color: #E7EAED                  ;
+    border-radius: 17px;
+    margin-right: 2em;
+}
+
+.rectangle-box{
+    position: absolute;
+    height: 20%;
+    width: 44.22%;
+    max-width: 540px;
+    top: 11.47%;
+    right: 5.26%;
+    bottom: 77.53%;
+    left: 50.52%;
+    font-size: var(--font-size-sm);
+    color: var(--color-darkgray-200);
+  }
+  /* .box2{
+    /* height:208.34px; 
+    height: 80%;
+  }*/
+  .box3{
+     /* height:70px;  */
+    height: 20%;
+  } 
+  .recBox{
+    border-radius: 15px;
+    background: #FAF9F9;
+  }
+    /* justify-content: end;
+    text-align: end!important; */
+  .avatar{
+    /* position: absolute; */
+    /* top: 42.99px;
+    left: 696.47px; */
+    border-radius: var(--br-31xl);
+    width: 100px;
+    height: 124.4px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+   .nameBox{
+    border-radius: 9px !important;
+    border: 1px solid #B2A6A6!important;
+    background: #F4EEEE !important;
+   }
+ 
+  .notify-badge{
+    position: relative;
+    right:80%;
+    top:-30%;
+    background: #0771DE;
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+    padding:5px;
+    font-size:20px;
+  }
+  .notify-badge:hover{
+    cursor: pointer;
+  }
+
+  /* .add-resource-view-item {
+      position: absolute;
+      top: 540.5px;
+      left: 1720.5px;
+      border-right: 1px solid var(--color-gainsboro-200);
+      box-sizing: border-box;
+      width: 1px;
+      height: 23px;
+    } */
+  
+  /* .rectangle-parent {
+      position: absolute;
+      height: 11%;
+      width: 44.22%;
+      top: 11.47%;
+      right: 5.26%;
+      bottom: 77.53%;
+      left: 50.52%;
+      font-size: var(--font-size-sm);
+      color: var(--color-darkgray-200);
+    } */

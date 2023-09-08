@@ -1,0 +1,53 @@
+
+<button class="btn backbtn" #btn  hidden>
+    <i class="fa-solid fa-minus"></i>
+</button> 
+
+<div #workingHoursParent class="row d-flex flex-row justify-content-end align-items-center">
+
+    <ng-container *ngIf="switch.checked">
+
+    <div class="col-1">
+        <button class="btn backbtn">
+            <i class="fa-regular fa-copy"></i>
+       </button> 
+    </div>
+  
+    
+
+   <div class="col-8" #workingHours>
+<div class="row justify-content-between align-items-center">
+    <div class="col-1">
+        <button class="btn backbtn"  (click)="addSection($event)">
+           <i class="fa-solid fa-plus"></i>
+       </button> 
+    </div>
+
+        <div class="col-4">
+            <span class="float-end"> وقت الانتهاء</span>
+            <div class="cs-form ">
+                <!-- value="10:05 AM" -->
+                <input type="time" class="form-control"  />
+              </div>
+         </div>
+         --
+         <div class="col-4">
+            <span class="float-end">وقت البدء</span>
+            <div class="cs-form ">
+                <input type="time" class="form-control" placeholder="09:00 AM"/>
+              </div>
+         </div>
+        </div>
+    </div>
+        </ng-container>
+
+         <div style="width: 15%;">
+            <div class="form-check form-switch" >
+               <input class="form-check-input float-end" type="checkbox" role="switch" #switch id="flexSwitchCheckChecked" checked
+               (click)="switchFn()">
+               <!-- switch.checked != switch.checked -->
+               <label class="form-check-label float-end mx-5" for="flexSwitchCheckChecked">{{day}}</label>
+           </div>
+       </div>
+
+</div>
